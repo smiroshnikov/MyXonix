@@ -5,14 +5,17 @@ import javax.swing.JFrame;
 public class GameXonix extends JFrame{
 
 	private static final long serialVersionUID = 3072692890472331152L;
-	public final String PROGRAM_TITLE = "My Xonix"; 
-	public final int BOARD_WIDTH = 800; 
-	public final int BOARD_HEIGHT = 600;
+	private static final String PROGRAM_TITLE = "My Xonix";
+	final static int BOARD_WIDTH = 800;
+	final static int BOARD_HEIGHT = 600;
 	
 	Canvas canvas;
 	
 	public static void main(String[] args) {
-		GameXonix game = new GameXonix();	
+		GameXonix game = new GameXonix();
+		Cube c = new Cube();
+		c.printShit();
+
 	}
 	
 	GameXonix(){
@@ -27,6 +30,11 @@ public class GameXonix extends JFrame{
 		setVisible(true);	
 	}
 		
-	
-
+	public class Cude {
+		int x = BOARD_WIDTH +1;
+		
+	}
 }
+
+
+

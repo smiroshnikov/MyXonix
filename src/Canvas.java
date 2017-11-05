@@ -3,11 +3,20 @@ import java.awt.Graphics;
 import javax.swing.JPanel;
 
 public class Canvas extends JPanel {
-	
-	public final int BOX_SIZE = 100;
-	public final int BOX_THICKNESS = BOX_SIZE/5;
-	
-	@Override 
+
+
+	public final static int BOX_SIZE = 100;
+	public final static int BOX_THICKNESS = BOX_SIZE/5;
+
+//	public static int getBOX_SIZE() {
+//		return BOX_SIZE;
+//	}
+
+	public int getBOX_THICKNESS() {
+		return BOX_THICKNESS;
+	}
+
+	@Override
 	public void paint (Graphics g){
 		super.paint(g);
 		int x = 2;
